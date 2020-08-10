@@ -1,9 +1,11 @@
 package kr.ac.kumoh.s20171050.aac
 
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import kr.ac.kumoh.s20171050.aac.databinding.ActivityCounterBinding
 
@@ -21,18 +23,21 @@ class CounterActivity : AppCompatActivity() {
         val binding: ActivityCounterBinding =
             DataBindingUtil.setContentView(this, R.layout.activity_counter)
 
-        binding.countText.text = "${viewmodel.counter.value}"
 
         binding.fabAdd.setOnClickListener {
             viewmodel.increase()
-            binding.countText.text = "${viewmodel.counter.value}"
         }
-
 
         binding.fabRemove.setOnClickListener {
             viewmodel.decrease()
-            binding.countText.text ="${viewmodel.counter.value}"
         }
 
+        // LiveData 관찰 가능
+        viewmodel.counter.observe(this, Observer {
+            // UI 업데이트
+            binding.countText.text = "${it}"
+        })
+
     }
+
 }
