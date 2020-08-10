@@ -26,10 +26,6 @@ class CounterActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
 
         binding.viewmodel = viewmodel
-
-        binding.fabAdd.setOnClickListener { viewmodel.increase() }
-        binding.fabRemove.setOnClickListener { viewmodel.decrease() }
-
     }
 
 }
