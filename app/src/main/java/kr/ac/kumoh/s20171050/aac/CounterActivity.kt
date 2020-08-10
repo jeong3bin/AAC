@@ -24,13 +24,9 @@ class CounterActivity : AppCompatActivity() {
             DataBindingUtil.setContentView(this, R.layout.activity_counter)
 
 
-        binding.fabAdd.setOnClickListener {
-            viewmodel.increase()
-        }
+        binding.fabAdd.setOnClickListener { viewmodel.increase() }
 
-        binding.fabRemove.setOnClickListener {
-            viewmodel.decrease()
-        }
+        binding.fabRemove.setOnClickListener { viewmodel.decrease() }
 
         // LiveData 관찰 가능
         viewmodel.counter.observe(this, Observer {
