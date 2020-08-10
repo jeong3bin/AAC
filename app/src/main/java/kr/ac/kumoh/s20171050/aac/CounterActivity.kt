@@ -21,17 +21,17 @@ class CounterActivity : AppCompatActivity() {
         val binding: ActivityCounterBinding =
             DataBindingUtil.setContentView(this, R.layout.activity_counter)
 
-        binding.countText.text = viewmodel.counter.toString()
+        binding.countText.text = "${viewmodel.counter.value}"
 
         binding.fabAdd.setOnClickListener {
-            viewmodel.counter++
-            binding.countText.text = viewmodel.counter.toString()
+            viewmodel.increase()
+            binding.countText.text = "${viewmodel.counter.value}"
         }
 
 
         binding.fabRemove.setOnClickListener {
-            viewmodel.counter--
-            binding.countText.text = viewmodel.counter.toString()
+            viewmodel.decrease()
+            binding.countText.text ="${viewmodel.counter.value}"
         }
 
     }
