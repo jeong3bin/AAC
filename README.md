@@ -2,6 +2,7 @@
 >Android Architecture Component
 
 https://www.youtube.com/watch?v=Y-uPcwBEEV4 참고
+by Kotlin
 
 DataBinding
 -----------
