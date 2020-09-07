@@ -1,7 +1,7 @@
 # AAC
 >Android Architecture Component
 
-https://www.youtube.com/watch?v=Y-uPcwBEEV4 참고
+https://www.youtube.com/watch?v=Y-uPcwBEEV4 참고</br>
 by Kotlin
 
 DataBinding
