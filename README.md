@@ -1,13 +1,14 @@
 # AAC
 > __Android Architecture Component__
->> 앱 구조를 더 튼튼하고, 테스트에 용이하고, 유지 보수성이 뛰어나게 만들어 주는 모듈화된 코딩을 돕는 라이브러리 모음 
+>> 앱 구조를 더 튼튼하고, 테스트에 용이하고, 유지 보수성이 뛰어나게 만들어 주는 모듈화된 코딩을 돕는 라이브러리 모음 </br>
 
+
+
+>https://www.youtube.com/watch?v=Y-uPcwBEEV4 참고 </br>
+by Kotlin
 
 안드로이드는 Activity, BroadcastReceiver, Service, ContentProvider 등 여러 컴포넌트들이 있고, 생명주기가 다르게 얽혀있습니다. 앱을 잘 만들기 위해서는 이러한 컴포넌트들을 부드럽게 연결해야 하는데, 생명주기를 학습하고 엉키지 않도록 고민하는 것은 결국 개발자의 몫이였습니다. 구글은 이 고민을 줄이기 위해 SDK에서 제공하는 컴포넌트들에 대해 개발자들에게 더 가이드를 주기를 원했습니다. 그래서 Android Architecture Components(AAC)를 만들었습니다
 
-
->https://www.youtube.com/watch?v=Y-uPcwBEEV4 참고</br>
-by Kotlin
 
 DataBinding
 -----------
